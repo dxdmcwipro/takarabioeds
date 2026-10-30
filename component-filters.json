@@ -31,7 +31,8 @@
       "cards-product",
       "counters",
       "columns-oem",
-      "stories"
+      "stories",
+      "mega-menu"
     ]
   },
   {
@@ -95,6 +96,12 @@
     "id": "counters",
     "components": [
       "counter"
+    ]
+  },
+  {
+    "id": "mega-menu",
+    "components": [
+      "mega-menu-item"
     ]
   },
   {

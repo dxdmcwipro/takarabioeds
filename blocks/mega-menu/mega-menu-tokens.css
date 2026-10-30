@@ -1,0 +1,39 @@
+/* Mega Menu tokens — built on the Takara Bio header (Figma node 2:3832) */
+.mega-menu {
+  --mega-menu-label-font-size: 14px;
+  --mega-menu-label-font-weight: 600;
+  --mega-menu-label-color: var(--tb-ink);
+  --mega-menu-label-active-color: var(--tb-blue);
+  --mega-menu-indicator-height: 2px;
+  --mega-menu-indicator-offset: -10px;
+  --mega-menu-panel-background: var(--tb-white);
+  --mega-menu-panel-border: 1px solid var(--tb-border);
+  --mega-menu-panel-shadow: 0 12px 24px 0 rgb(8 13 23 / 12%);
+  --mega-menu-panel-max-width: 1440px;
+  --mega-menu-panel-padding: 32px 24px 40px 33px;
+  --mega-menu-panel-gap: 48px;
+  --mega-menu-column-min: 180px;
+  --mega-menu-column-gap: 32px;
+  --mega-menu-heading-font-size: 11px;
+  --mega-menu-heading-font-weight: 600;
+  --mega-menu-heading-letter-spacing: 1.2px;
+  --mega-menu-heading-color: var(--tb-blue-dark);
+  --mega-menu-heading-gap: 16px;
+  --mega-menu-link-font-size: 14px;
+  --mega-menu-link-line-height: 20px;
+  --mega-menu-link-color: var(--tb-ink);
+  --mega-menu-link-hover-color: var(--tb-blue);
+  --mega-menu-link-gap: 12px;
+  --mega-menu-feature-width: 320px;
+  --mega-menu-feature-background: var(--tb-sky);
+  --mega-menu-feature-radius: var(--tb-radius-card);
+  --mega-menu-feature-padding: 16px;
+  --mega-menu-feature-image-height: 150px;
+  --mega-menu-feature-image-radius: var(--tb-radius-media);
+  --mega-menu-feature-title-font-size: 16px;
+  --mega-menu-feature-title-line-height: 22px;
+  --mega-menu-feature-text-font-size: 13px;
+  --mega-menu-feature-text-color: var(--tb-slate);
+  --mega-menu-cta-icon: url('../../icons/arrow-right.svg');
+  --mega-menu-chevron-icon: url('../../icons/chevron-down.svg');
+}

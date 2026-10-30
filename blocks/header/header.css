@@ -3,7 +3,7 @@ header .nav-wrapper {
   background-color: var(--background-color);
   border-bottom: 1px solid var(--tb-border);
   width: 100%;
-  z-index: 2;
+  z-index: 10;
   position: fixed;
 }
 
@@ -392,6 +392,10 @@ header nav .nav-assistant a:any-link::before {
 }
 
 @media (width < 900px) {
+  header nav[aria-expanded='true'] .nav-sections .mega-menu-wrapper {
+    border-bottom: 1px solid var(--tb-border);
+  }
+
   header nav[aria-expanded='true'] .nav-tools li {
     display: block;
   }
@@ -454,7 +458,11 @@ header nav .nav-assistant a:any-link::before {
     width: 100%;
   }
 
-  header nav .nav-sections {
+  header nav .nav-sections,
+  header nav[aria-expanded='true'] .nav-sections {
+    display: flex;
+    align-items: center;
+    gap: 33px;
     align-self: center;
     padding-left: 9px;
   }
