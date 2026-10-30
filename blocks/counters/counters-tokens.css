@@ -1,0 +1,28 @@
+/* Tokens from Figma node 2:3826 (Counter) — 1440 x 205, intro 491 wide, counters 220 wide every 260 */
+.counters {
+  --counters-gap: 40px;
+  --counters-intro-width: 520px;
+  --counters-intro-gap: 9px;
+  --counters-heading-font-size: 22px;
+  --counters-heading-line-height: 27px;
+  --counters-heading-font-weight: 700;
+  --counters-heading-color: var(--tb-black);
+  --counters-text-font-size: 14px;
+  --counters-text-line-height: 20px;
+  --counters-text-color: var(--tb-black);
+  --counters-item-width: 210px;
+  --counters-item-gap: 40px;
+  --counters-value-font-size: 34px;
+  --counters-value-line-height: 42px;
+  --counters-value-font-weight: 600;
+  --counters-value-color: var(--tb-black);
+  --counters-label-gap: 8px;
+  --counters-label-font-size: 16px;
+  --counters-label-line-height: 19px;
+  --counters-label-color: var(--tb-slate-light);
+}
+
+/* section-level tokens (read by the section/wrapper, outside the block) */
+.counters-container {
+  --counters-section-padding-y: 64px;
+}

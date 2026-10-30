@@ -24,13 +24,38 @@
       "table",
       "text",
       "title",
-      "video"
+      "video",
+      "hero-home",
+      "cards-highlight",
+      "cards-news",
+      "cards-product",
+      "counters",
+      "columns-oem",
+      "stories"
     ]
   },
   {
     "id": "accordion",
     "components": [
       "accordion-item"
+    ]
+  },
+  {
+    "id": "cards-highlight",
+    "components": [
+      "cards-highlight-item"
+    ]
+  },
+  {
+    "id": "cards-news",
+    "components": [
+      "cards-news-item"
+    ]
+  },
+  {
+    "id": "cards-product",
+    "components": [
+      "cards-product-item"
     ]
   },
   {
@@ -46,6 +71,12 @@
     ]
   },
   {
+    "id": "columns-oem",
+    "components": [
+      "column"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"
@@ -58,6 +89,18 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "counters",
+    "components": [
+      "counter"
+    ]
+  },
+  {
+    "id": "stories",
+    "components": [
+      "story"
     ]
   },
   {

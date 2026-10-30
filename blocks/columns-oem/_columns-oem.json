@@ -1,0 +1,49 @@
+{
+  "definitions": [
+    {
+      "title": "Columns OEM",
+      "id": "columns-oem",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/columns/v1/columns",
+            "template": {
+              "name": "Columns OEM",
+              "model": "columns-oem",
+              "filter": "columns-oem",
+              "columns": "2",
+              "rows": "1"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "columns-oem",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "number",
+          "name": "columns",
+          "value": "",
+          "label": "Columns"
+        },
+        {
+          "component": "text",
+          "valueType": "number",
+          "name": "rows",
+          "value": "",
+          "label": "Rows"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "columns-oem",
+      "components": ["column"]
+    }
+  ]
+}

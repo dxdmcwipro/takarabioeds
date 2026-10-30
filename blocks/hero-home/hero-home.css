@@ -1,0 +1,108 @@
+@import url('./hero-home-tokens.css');
+
+.hero-home-container .hero-home-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-home {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: var(--hero-home-min-height-mobile);
+  background: var(--hero-home-background);
+  overflow: hidden;
+}
+
+.hero-home .hero-home-media {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-home .hero-home-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--hero-home-overlay-mobile);
+}
+
+.hero-home .hero-home-image,
+.hero-home .hero-home-image picture {
+  height: 100%;
+}
+
+.hero-home .hero-home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.hero-home .hero-home-content {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--tb-content-width);
+  margin: 0 auto;
+  padding: var(--hero-home-padding-top) var(--hero-home-padding-x) var(--hero-home-padding-bottom);
+}
+
+.hero-home .hero-home-content > div {
+  max-width: var(--hero-home-content-width);
+}
+
+.hero-home .hero-home-eyebrow {
+  margin: 0 0 var(--hero-home-eyebrow-gap);
+  font-size: var(--hero-home-eyebrow-font-size);
+  font-weight: var(--hero-home-eyebrow-font-weight);
+  line-height: var(--hero-home-eyebrow-line-height);
+  color: var(--hero-home-eyebrow-color);
+  text-transform: var(--hero-home-eyebrow-transform);
+}
+
+.hero-home h1,
+.hero-home h2 {
+  margin: 0;
+  font-size: var(--hero-home-heading-font-size-mobile);
+  font-weight: var(--hero-home-heading-font-weight);
+  line-height: var(--hero-home-heading-line-height-mobile);
+  letter-spacing: var(--hero-home-heading-letter-spacing);
+  color: var(--hero-home-heading-color);
+}
+
+.hero-home h1 + p,
+.hero-home h2 + p {
+  max-width: var(--hero-home-body-width);
+  margin: var(--hero-home-body-gap) 0 0;
+  font-size: var(--hero-home-body-font-size);
+  line-height: var(--hero-home-body-line-height);
+  color: var(--hero-home-body-color);
+}
+
+@media (width >= 900px) {
+  .hero-home {
+    min-height: var(--hero-home-min-height);
+  }
+
+  .hero-home .hero-home-media::after {
+    background: var(--hero-home-overlay);
+  }
+
+  .hero-home .hero-home-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-home h1,
+  .hero-home h2 {
+    font-size: var(--hero-home-heading-font-size);
+    line-height: var(--hero-home-heading-line-height);
+  }
+}
+
+@media (width >= 900px) {
+  main > .section.hero-home-container {
+    padding-bottom: var(--hero-home-section-padding-bottom);
+  }
+}

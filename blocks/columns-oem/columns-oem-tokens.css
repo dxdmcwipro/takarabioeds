@@ -1,0 +1,35 @@
+/* Tokens from Figma node 2:3828 (OEM_Cards) — text 564 wide, image 588 x 374, gap 48 */
+.columns-oem {
+  --columns-oem-gap: 48px;
+  --columns-oem-text-width: 564px;
+  --columns-oem-image-width: 588px;
+  --columns-oem-image-radius: var(--tb-radius-media);
+  --columns-oem-eyebrow-font-size: 12px;
+  --columns-oem-eyebrow-line-height: 15px;
+  --columns-oem-eyebrow-color: var(--tb-grey);
+  --columns-oem-heading-font-size: 22px;
+  --columns-oem-heading-line-height: 27px;
+  --columns-oem-heading-font-weight: 700;
+  --columns-oem-heading-color: var(--tb-black);
+  --columns-oem-heading-gap: 12px;
+  --columns-oem-text-font-size: 14px;
+  --columns-oem-text-line-height: 20px;
+  --columns-oem-text-color: var(--tb-black);
+  --columns-oem-block-gap: 24px;
+  --columns-oem-list-gap: 12px;
+  --columns-oem-check-size: 12px;
+  --columns-oem-check-gap: 8px;
+  --columns-oem-check-icon: url('../../icons/check-circle.svg');
+  --columns-oem-button-gap: 24px;
+  --columns-oem-button-height: 40px;
+  --columns-oem-button-padding-x: 16px;
+  --columns-oem-button-radius: 6px;
+  --columns-oem-button-font-size: 12px;
+  --columns-oem-button-font-weight: 700;
+  --columns-oem-button-background: var(--tb-blue);
+  --columns-oem-button-color: var(--tb-white);
+  --columns-oem-button-hover-background: var(--tb-blue-hover);
+  --columns-oem-secondary-background: var(--tb-white);
+  --columns-oem-secondary-border: 1px solid var(--tb-blue);
+  --columns-oem-secondary-color: var(--tb-blue);
+}

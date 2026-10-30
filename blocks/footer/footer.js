@@ -8,7 +8,9 @@ import { loadFragment } from '../fragment/fragment.js';
 export default async function decorate(block) {
   // load footer as fragment
   const footerMeta = getMetadata('footer');
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+  // local preview serves authored content under /content/, so look for the footer there
+  const localPrefix = window.location.hostname === 'localhost' && window.location.pathname.startsWith('/content/') ? '/content' : '';
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : `${localPrefix}/footer`;
   const fragment = await loadFragment(footerPath);
 
   // decorate footer DOM

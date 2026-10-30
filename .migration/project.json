@@ -1,0 +1,13 @@
+{
+  "sites": {
+    "takarabioeds": {
+      "previewOrg": "dxdmcwipro",
+      "previewSite": "takarabioeds",
+      "contentHostUrl": "author-p22953-e148511.adobeaemcloud.com",
+      "aemSitePath": "/content/takarabio",
+      "aemAssetsFolderPath": "/content/dam/takarabio",
+      "aemSiteName": "takarabio",
+      "aemSiteTitle": "takarabio"
+    }
+  }
+}

@@ -33,6 +33,18 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "Sky Gradient",
+              "value": "sky-gradient"
+            },
+            {
+              "name": "Full Width",
+              "value": "full-width"
             }
           ]
         }
@@ -59,7 +71,14 @@
         "table",
         "text",
         "title",
-        "video"
+        "video",
+        "hero-home",
+        "cards-highlight",
+        "cards-news",
+        "cards-product",
+        "counters",
+        "columns-oem",
+        "stories"
       ]
     }
   ]

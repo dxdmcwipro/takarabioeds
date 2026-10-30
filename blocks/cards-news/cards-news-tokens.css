@@ -1,0 +1,18 @@
+/* Tokens from Figma node 2:3824 (gr_homeUIcard01) — 3 cards 384 wide, gap 24 */
+.cards-news {
+  --cards-news-gap: 24px;
+  --cards-news-columns: 3;
+  --cards-news-image-height: 190px;
+  --cards-news-image-radius: var(--tb-radius-media);
+  --cards-news-image-border: 1px solid var(--tb-border-grey);
+  --cards-news-image-background: var(--tb-surface);
+  --cards-news-body-gap: 3px;
+  --cards-news-body-margin-top: 12px;
+  --cards-news-title-font-size: 18px;
+  --cards-news-title-line-height: 22px;
+  --cards-news-title-font-weight: 500;
+  --cards-news-title-color: var(--tb-black);
+  --cards-news-text-font-size: 14px;
+  --cards-news-text-line-height: 20px;
+  --cards-news-text-color: var(--tb-black);
+}

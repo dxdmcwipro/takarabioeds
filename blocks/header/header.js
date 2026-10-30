@@ -176,7 +176,9 @@ async function buildBreadcrumbs() {
 export default async function decorate(block) {
   // load nav as fragment
   const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
+  // local preview serves authored content under /content/, so look for the nav there
+  const localPrefix = window.location.hostname === 'localhost' && window.location.pathname.startsWith('/content/') ? '/content' : '';
+  const navPath = navMeta ? new URL(navMeta, window.location).pathname : `${localPrefix}/nav`;
   const fragment = await loadFragment(navPath);
 
   // decorate nav DOM
@@ -185,7 +187,7 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  const classes = ['brand', 'sections', 'tools', 'assistant'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
@@ -221,8 +223,40 @@ export default async function decorate(block) {
     const search = navTools.querySelector('a[href*="search"]');
     if (search && search.textContent === '') {
       search.setAttribute('aria-label', 'Search');
+    } else if (search) {
+      // a search link with text becomes the header search bar
+      const form = document.createElement('form');
+      form.className = 'nav-search';
+      form.action = search.href;
+      form.setAttribute('role', 'search');
+      form.innerHTML = `<input type="search" name="q" placeholder="${search.textContent.trim()}" aria-label="${search.textContent.trim()}">
+        <button type="submit" aria-label="Search"></button>`;
+      search.closest('li')?.classList.add('nav-search-item');
+      search.replaceWith(form);
     }
+    navTools.querySelectorAll('.button').forEach((link) => {
+      link.classList.remove('button');
+      link.closest('.button-container')?.classList.remove('button-container');
+    });
+    // links whose text ends with a number in brackets get a badge, e.g. "Cart (1)"
+    navTools.querySelectorAll('a').forEach((link) => {
+      const match = link.textContent.match(/^(.*?)\s*\((\d+)\)$/);
+      if (!match) return;
+      const [, label, count] = match;
+      link.textContent = '';
+      link.setAttribute('aria-label', `${label} (${count} items)`);
+      const badge = document.createElement('span');
+      badge.className = 'nav-badge';
+      badge.textContent = count;
+      link.append(badge);
+    });
   }
+
+  const navAssistant = nav.querySelector('.nav-assistant');
+  navAssistant?.querySelectorAll('.button').forEach((link) => {
+    link.classList.remove('button');
+    link.closest('.button-container')?.classList.remove('button-container');
+  });
 
   // hamburger for mobile
   const hamburger = document.createElement('div');

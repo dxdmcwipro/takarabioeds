@@ -1,0 +1,78 @@
+@import url('./cards-highlight-tokens.css');
+
+main > .section > .cards-highlight-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-top: calc(var(--cards-highlight-overlap) * -1);
+}
+
+.cards-highlight > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--cards-highlight-gap);
+}
+
+.cards-highlight > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: var(--cards-highlight-item-min-height);
+  padding: 0 var(--cards-highlight-item-padding-x) 0 0;
+  border: var(--cards-highlight-item-border);
+  border-radius: var(--cards-highlight-item-radius);
+  background-color: var(--cards-highlight-item-background);
+  box-shadow: var(--cards-highlight-item-shadow);
+  overflow: hidden;
+}
+
+.cards-highlight .cards-highlight-card-body {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--cards-highlight-body-gap);
+  padding: var(--cards-highlight-body-padding);
+}
+
+.cards-highlight .cards-highlight-card-body > * {
+  margin: 0;
+}
+
+.cards-highlight .cards-highlight-card-body > p:first-child {
+  font-size: var(--cards-highlight-eyebrow-font-size);
+  font-weight: var(--cards-highlight-eyebrow-font-weight);
+  line-height: var(--cards-highlight-eyebrow-line-height);
+  letter-spacing: var(--cards-highlight-eyebrow-letter-spacing);
+  color: var(--cards-highlight-eyebrow-color);
+  text-transform: uppercase;
+}
+
+.cards-highlight .cards-highlight-card-body h3,
+.cards-highlight .cards-highlight-card-body p:last-child:not(:first-child) {
+  font-size: var(--cards-highlight-title-font-size);
+  font-weight: var(--cards-highlight-title-font-weight);
+  line-height: var(--cards-highlight-title-line-height);
+  color: var(--cards-highlight-title-color);
+}
+
+.cards-highlight .cards-highlight-card-image {
+  order: 2;
+  flex: 0 0 var(--cards-highlight-image-size);
+  line-height: 0;
+}
+
+.cards-highlight .cards-highlight-card-image img {
+  width: var(--cards-highlight-image-size);
+  height: var(--cards-highlight-image-size);
+  border-radius: var(--cards-highlight-image-radius);
+  object-fit: cover;
+}
+
+@media (width >= 900px) {
+  .cards-highlight > ul {
+    grid-template-columns: repeat(var(--cards-highlight-columns), 1fr);
+  }
+}

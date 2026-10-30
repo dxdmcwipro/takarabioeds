@@ -1,0 +1,33 @@
+/* Tokens from Figma node 2:3827 (gr_UICards_2_3_4 / Type=Product) — 3 cards 384 wide, gap 24 */
+.cards-product {
+  --cards-product-gap: 24px;
+  --cards-product-columns: 3;
+  --cards-product-item-background: var(--tb-white);
+  --cards-product-item-border: 1px solid var(--tb-border);
+  --cards-product-item-radius: var(--tb-radius-card);
+  --cards-product-item-shadow: var(--tb-shadow-card);
+  --cards-product-item-hover-shadow: 0 6px 18px 0 rgb(0 0 0 / 12%);
+  --cards-product-transition: box-shadow 0.2s ease;
+  --cards-product-image-height: 160px;
+  --cards-product-body-padding: 24px;
+  --cards-product-body-gap: 12px;
+  --cards-product-eyebrow-font-size: 11px;
+  --cards-product-eyebrow-line-height: 16px;
+  --cards-product-eyebrow-font-weight: 600;
+  --cards-product-eyebrow-letter-spacing: 1.2px;
+  --cards-product-eyebrow-color: var(--tb-blue-dark);
+  --cards-product-title-font-size: 20px;
+  --cards-product-title-line-height: 28px;
+  --cards-product-title-font-weight: 600;
+  --cards-product-title-color: var(--tb-ink);
+  --cards-product-text-font-size: 14px;
+  --cards-product-text-line-height: 20px;
+  --cards-product-text-color: var(--tb-slate);
+  --cards-product-cta-font-size: 14px;
+  --cards-product-cta-line-height: 20px;
+  --cards-product-cta-font-weight: 500;
+  --cards-product-cta-color: var(--tb-blue-dark);
+  --cards-product-cta-gap: 6px;
+  --cards-product-cta-icon: url('../../icons/arrow-right.svg');
+  --cards-product-cta-icon-size: 16px;
+}

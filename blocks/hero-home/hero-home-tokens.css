@@ -1,0 +1,35 @@
+/* Tokens from Figma node 2:3822 (gr_Hero image) — 1440 x 414, content frame px 120 py 60 */
+.hero-home {
+  --hero-home-min-height: 414px;
+  --hero-home-min-height-mobile: 360px;
+  --hero-home-content-width: 584px;
+  --hero-home-padding-top: 60px;
+  --hero-home-padding-bottom: 120px;
+  --hero-home-padding-x: 24px;
+  --hero-home-background: var(--tb-white);
+  --hero-home-overlay: none;
+  --hero-home-overlay-mobile: linear-gradient(180deg, rgb(255 255 255 / 92%) 0%, rgb(255 255 255 / 80%) 60%, rgb(255 255 255 / 40%) 100%);
+  --hero-home-eyebrow-font-size: 12px;
+  --hero-home-eyebrow-line-height: 15px;
+  --hero-home-eyebrow-font-weight: 400;
+  --hero-home-eyebrow-color: var(--tb-grey);
+  --hero-home-eyebrow-transform: uppercase;
+  --hero-home-eyebrow-gap: 12px;
+  --hero-home-heading-font-size: 64px;
+  --hero-home-heading-font-size-mobile: 40px;
+  --hero-home-heading-line-height: 72px;
+  --hero-home-heading-line-height-mobile: 46px;
+  --hero-home-heading-font-weight: 800;
+  --hero-home-heading-letter-spacing: -0.5px;
+  --hero-home-heading-color: var(--tb-ink);
+  --hero-home-body-gap: 24px;
+  --hero-home-body-font-size: 14px;
+  --hero-home-body-line-height: 20px;
+  --hero-home-body-color: var(--tb-black);
+  --hero-home-body-width: 500px;
+}
+
+/* section-level tokens (read by the section/wrapper, outside the block) */
+.hero-home-container {
+  --hero-home-section-padding-bottom: 56px;
+}

@@ -1,0 +1,35 @@
+/* Tokens from Figma node 2:3823 (Component 1 / gt_card) — 3 cards 384 x 192, gap 24 */
+.cards-highlight {
+  --cards-highlight-gap: 24px;
+  --cards-highlight-columns: 3;
+  --cards-highlight-item-min-height: 192px;
+  --cards-highlight-item-padding-x: 14px;
+  --cards-highlight-item-background: var(--tb-white);
+  --cards-highlight-item-border: 1px solid var(--tb-border);
+  --cards-highlight-item-radius: var(--tb-radius-card);
+  --cards-highlight-item-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%), 0 4px 22px 0 rgb(0 0 0 / 25%);
+  --cards-highlight-body-padding: 24px 8px 24px 24px;
+  --cards-highlight-body-gap: 12px;
+  --cards-highlight-image-size: 150px;
+  --cards-highlight-image-radius: 6px;
+  --cards-highlight-eyebrow-font-size: 11px;
+  --cards-highlight-eyebrow-line-height: 16px;
+  --cards-highlight-eyebrow-font-weight: 600;
+  --cards-highlight-eyebrow-letter-spacing: 1.2px;
+  --cards-highlight-eyebrow-color: var(--tb-blue-dark);
+  --cards-highlight-title-font-size: 20px;
+  --cards-highlight-title-line-height: 28px;
+  --cards-highlight-title-font-weight: 600;
+  --cards-highlight-title-color: var(--tb-ink);
+}
+
+/* section-level tokens (read by the section/wrapper, outside the block) */
+.cards-highlight-wrapper {
+  --cards-highlight-overlap: 32px;
+}
+
+@media (width >= 900px) {
+  .cards-highlight-wrapper {
+    --cards-highlight-overlap: 59px;
+  }
+}

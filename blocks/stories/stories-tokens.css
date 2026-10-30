@@ -1,0 +1,74 @@
+/* Tokens from Figma node 2:3829 (BLOGS / BioView Story Explorer) — list 344 wide, panel 780 x 530 */
+.stories {
+  --stories-header-gap: 24px;
+  --stories-divider: 1px solid var(--tb-border-grey);
+  --stories-divider-gap: 32px;
+  --stories-heading-font-size: 22px;
+  --stories-heading-line-height: 27px;
+  --stories-heading-color: var(--tb-black);
+  --stories-intro-font-size: 12px;
+  --stories-intro-line-height: 16px;
+  --stories-control-height: 48px;
+  --stories-control-width: 180px;
+  --stories-control-border: 1px solid var(--tb-border-grey);
+  --stories-control-radius: 6px;
+  --stories-control-font-size: 12px;
+  --stories-control-gap: 18px;
+  --stories-search-button-size: 40px;
+  --stories-search-button-background: var(--tb-blue);
+  --stories-share-color: var(--tb-blue);
+  --stories-body-gap: 34px;
+  --stories-aside-width: 344px;
+  --stories-aside-background: #f3f8fc;
+  --stories-aside-radius: 20px;
+  --stories-aside-padding: 26px 14px 14px;
+  --stories-aside-title-font-size: 11px;
+  --stories-aside-title-color: var(--tb-blue);
+  --stories-item-gap: 14px;
+  --stories-item-padding: 10px 8px;
+  --stories-item-radius: 12px;
+  --stories-item-active-background: var(--tb-white);
+  --stories-item-active-shadow: 0 2px 10px 0 rgb(8 13 23 / 12%);
+  --stories-item-accent: 3px solid var(--tb-blue);
+  --stories-thumb-width: 108px;
+  --stories-thumb-height: 100px;
+  --stories-thumb-radius: 8px;
+  --stories-meta-font-size: 11px;
+  --stories-meta-color: var(--tb-blue);
+  --stories-title-font-size: 15px;
+  --stories-title-line-height: 17px;
+  --stories-title-font-weight: 600;
+  --stories-title-color: var(--tb-ink);
+  --stories-cta-icon: url('../../icons/arrow-right.svg');
+  --stories-view-all-height: 34px;
+  --stories-view-all-background: #0a5d99;
+  --stories-view-all-radius: 4px;
+  --stories-view-all-font-size: 14px;
+  --stories-panel-background: #f5f5f2;
+  --stories-panel-border: 1px solid var(--tb-border);
+  --stories-panel-radius: 16px;
+  --stories-panel-min-height: 530px;
+  --stories-panel-image-height: 155px;
+  --stories-panel-padding: 34px 29px 24px;
+  --stories-panel-title-font-size: 22px;
+  --stories-panel-title-line-height: 27px;
+  --stories-panel-subheading-font-size: 18px;
+  --stories-panel-subheading-line-height: 22px;
+  --stories-panel-subheading-gap: 48px;
+  --stories-panel-text-font-size: 12px;
+  --stories-panel-text-line-height: 15px;
+  --stories-save-width: 58px;
+  --stories-save-height: 30px;
+  --stories-save-background: rgb(255 255 255 / 85%);
+  --stories-read-height: 40px;
+  --stories-read-padding-x: 16px;
+  --stories-read-radius: 6px;
+  --stories-read-background: var(--tb-blue);
+  --stories-read-hover-background: var(--tb-blue-hover);
+  --stories-read-font-size: 12px;
+}
+
+/* section-level tokens (read by the section/wrapper, outside the block) */
+.stories-container {
+  --stories-section-padding-y: 40px;
+}
